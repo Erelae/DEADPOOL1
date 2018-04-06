@@ -2,7 +2,7 @@ import SpriteSheet from './SpriteSheet.js';
 import {loadImage} from './loaders.js';
 
 export function loadDeadpoolSprite() {
-    return loadImage('/img/deadpool.png')
+    return loadImage('img/deadpool.png')
     .then(image => {
         const sprites = new SpriteSheet(image, 16, 16);
         sprites.define('idle', 276, 44, 16, 16);
@@ -11,7 +11,7 @@ export function loadDeadpoolSprite() {
 }
 
 export function loadBackgroundSprites() {
-    return loadImage('/img/tiles.png')
+    return loadImage('img/tiles.png')
     .then(image => {
         const sprites = new SpriteSheet(image, 16, 16);
         sprites.defineTile('ground', 0, 0);
